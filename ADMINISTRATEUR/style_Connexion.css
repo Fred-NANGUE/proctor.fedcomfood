@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    background: url('image/backgroundUrl.jpg');
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(77, 161, 77);
+    height: 80px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    color: #f3d9bc;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 5%;
+    font-family: mv boli;
+    color: #fff;
+}
+
+header .menu {
+    display: flex;
+    margin-right: 5%;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header .menu li {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+}
+
+header .menu li a {
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu li a:hover {
+    border-bottom: 4px solid #fff;
+    border-radius: 0.1rem;
+    transition: border-bottom 0.2s ease-in-out;
+} 
+
+.menu li a:hover,
+.menu  li a.active {
+    border-bottom: 4px solid #fff;
+}
+/*plage accueil*/
+.boxGroup{
+    margin-top: -55%;
+    margin-right: 7%;
+}
+.box {
+    width: 340px;
+    height: 340px;
+    border:2px solid #fff;
+    border-radius: 100%;
+    top: 110px;
+    margin-left: 70%;
+}
+
+.box2 {
+    width: 250px;
+    height: 250px;
+    border:2px solid rgba(23, 252, 15, 0.788);
+    border-radius: 100%;
+    top: 110px;
+    margin-left: 50%;
+}
+
+
+
+/*plage soumissinon*/
+main {
+    display: flex;
+    margin-top: 6%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background-color: transparent;
+    border: 1px solid rgb(82, 79, 79);
+    border-radius: 0.4rem;
+    width: 40%;
+    padding: 2%;
+    margin: auto;
+    margin-top: -4%;
+    line-height: 2.5;
+}
+
+input {
+    padding: 2%;
+    background-color: transparent;
+    color: #fff;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background: rgb(77, 184, 77);
+    border-radius: 1rem;
+    padding: 2%;
+    width: 25%;
+    border-style: none;
+    margin-top: 2%;
+    margin-left: 10%;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.01);
+    background: transparent;
+    border: 1px solid rgb(77, 184, 77);
+    color: rgb(77, 184, 77);
+}
+
+
+/*plage creation de compte*/
+#menu1:visited {
+    border-top: 5px solid yellow;
+}
+
+#menu2:visited {
+    border-top: 5px solid yellow;
+}
+
+#menu3:visited {
+    border-top: 5px solid yellow;
+}  
+
+/* styler l'oeil qui affiche le contenu du password */
+.password-container {
+position: relative;
+}
+#togglePassword{
+    display:none;
+position: absolute;
+right: 10px;
+top: 75%;
+transform: translateY(-50%);
+cursor: pointer;
+font-size: 18px;
+user-select: none;
+}
+#togglePasswor{
+    display:none;
+position: absolute;
+right: 33%;
+top: 94%;
+transform: translateY(-50%);
+cursor: pointer;
+font-size: 18px;
+user-select: none;
+}
+#togglePasswo{
+    display:none;
+position: absolute;
+right: 33%;
+top: 89%;
+transform: translateY(-50%);
+cursor: pointer;
+font-size: 18px;
+user-select: none;
+}

@@ -1,0 +1,600 @@
+:root {
+    --primary-color: #27ae60;
+    --secondary-color: #000000;
+    --accent-color: #e67e22;
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-dark);
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fffbfb;
+}
+
+/*entete*/
+
+#accueil_main {
+    background: url('image_accueil/backgroundUrl.jpg');
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.fondEcranAccueil1 img {
+    /* position: relative; */
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.fondEcranAccueil2 img {
+    /* position: absolute; */
+    width: 40%;
+    margin-left: 30%;
+}
+
+header {
+    background: url('image_accueil/backgroundUrl.jpg');
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header .header1 {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+    align-items: center;
+}
+
+header .header1 .mail {
+    margin-left: 6%;
+}
+
+header .header1 .number {
+    margin-left: 8%;
+}
+
+.boutAdministrateur {
+    float: right;
+    margin-top: -1%;
+    margin-right: 1%;
+    font-size: 18px;
+}
+
+hr {
+    margin: 0% 5% 0% 5%;
+
+}
+
+header .header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+
+#logo_accueil img {
+    width: 25%;
+    margin-left: 15%;
+}
+
+.header2 nav ul {
+    display: flex;
+    margin-left: -40%; 
+}
+
+.header2 nav ul li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.header2 nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header2 nav ul li a:hover {
+    border-bottom: 4px solid #fff;
+    border-radius: 0.1rem;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.header2 .hoursHead {
+    display: block;
+    margin-left: -5%;
+    width: 550px;
+}
+
+.header2 .hoursHead p {
+    display: flex;
+    color: rgba(255, 255, 255, 0.473);
+}
+
+.header2 .btn_reservation {
+    margin-right: 6.5%;
+}
+
+.header2 .btn_reservation button {
+    font-weight: 700;
+    padding: 10%;
+    background-color: green;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.header2 .btn_reservation button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*corps*/
+main .def {
+    display: flex;
+}
+
+main .def1,
+main .def2,
+main .def3 {
+    display: flex;
+}
+
+main .def2,
+main .def3 {
+    display: none;
+}
+
+.def1,
+.def2,
+.def3 {
+    margin: 3% 0% 0% 10%;
+}
+
+/*animation de def*/
+
+.left_accueil {
+    display: block;
+}
+
+.left_accueil h1 {
+    font-family: Bodoni MT;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.left_accueil p {
+    margin: 2% 50% 4% 0;
+}
+
+.left_accueil button {
+    padding: 2%;
+    color: #fff;
+    font-weight: 510;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.left_accueil button:hover {
+    background-color: green;
+    border: none;
+}
+
+.left_accueil .excep {
+    margin-left: 2%;
+    background-color: green;
+    border: none;
+}
+
+.left_accueil .excep:hover {
+
+    background-color: transparent;
+    border: 1px solid #fff;
+
+}
+
+.right_accueil img {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: -10%;
+
+}
+
+#accueil_main #btn_defile_avant,
+#accueil_main #btn_defile_arriere {
+    background-color: transparent;
+    border: none;
+    margin-top: 250px;
+}
+
+/* categorie */
+.categorie_accueil {
+
+    display: flex;
+    margin: 2% 0 5% 15%;
+}
+
+.motif {
+
+    background-color: green;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.name_cat {
+    margin-top: 17%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.categorie_accueil .d {
+    text-align: center;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #e2dbdb;
+    width: 150px;
+    height: 100px;
+    margin: 0 5px 0 15px;
+    color: black;
+}
+
+.categorie_accueil .d:hover {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: scale(1.1);
+    color: black;
+}
+
+.model {
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.model:hover {
+    transform: scale(2);
+}
+
+.model-name {
+    padding-top: 30px;
+}
+
+/* Personnel Restaurant */
+#personnel {
+    padding: 0 10px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#personnel h2 {
+    margin: auto;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    margin-left: 45%;
+}
+
+#personnel h3 {
+    margin: auto;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 2%;
+    margin-left: 40%;
+}
+
+#personnel h6 {
+    margin-bottom: 5%;
+    margin-left: 45%;
+    color: #ece8e8;
+}
+
+#personnel .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    border-radius: 2rem;
+}
+
+#personnel .content .box {
+    overflow: hidden;
+    border-radius: 2rem;
+    position: relative;
+    height: 250px;
+}
+
+#personnel .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 40%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+    color: #000;
+}
+
+.box .content h4 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.box .content p {
+    padding: 2px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.box .content p:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.box .content a {
+    margin-top: 60px;
+    margin-left: 1%;
+    padding: 10px 60px;
+    border: 2px solid rgb(98, 187, 98);
+    color: rgb(98, 187, 98);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.box .content a {
+    background-color: rgb(98, 187, 98);
+    color: #fff;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px rgb(98, 187, 98);
+}
+
+.box:hover .content {
+    transform: translate(0);
+}
+
+/* creation compte client */
+#contact_main {
+    background: url('image_accueil/good-food-bg.jpg');
+    width: auto;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact_main input {
+    border-radius: 2rem;
+}
+
+#client-connexion {
+    line-height: 2.5;
+}
+
+#client-connexion div {
+    display: flex;
+    flex-direction: column;
+}
+
+#client-connexion input {
+    border-radius: 2rem;
+    border: 1px solid rgb(212, 208, 208);
+    padding: 2%;
+    font-weight: bold;
+    background: transparent;
+    color: #000;
+}
+
+#client-connexion input::placeholder {
+    text-align: center;
+}
+
+#client-connexion input[type="submit"] {
+    background: rgb(77, 184, 77);
+    border-radius: 1rem;
+    padding: 2%;
+    width: 30%;
+    border-style: none;
+    margin-top: 2%;
+    margin-left: 1%;
+    color: white;
+}
+
+#client-connexion input[type="submit"]:hover {
+    transform: scale(1.01);
+    background: transparent;
+    border: 1px solid rgb(77, 184, 77);
+    color: rgb(77, 184, 77);
+}
+
+#client-connexion div a {
+
+    text-decoration: none;
+    color: green;
+
+}
+
+/* styler l'oeil qui affiche le contenu du password */
+.password-container {
+    position: relative;
+}
+
+#togglepassword {
+    display: none;
+    position: absolute;
+    right: 10px;
+    margin-top: 12%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+/* Session responsive */
+#logo_hamburger {
+    display: none;
+}
+
+.menu-toogle {
+    display: none;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+.menu-hamburger li {
+    list-style-type: none;
+}
+
+.menu-hamburger li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.btn_panier_hamburger {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    #logo_hamburger {
+        display: block;
+    }
+
+    #logo_hamburger img {
+        max-width: 60%;
+        min-height: 0444%;
+         object-fit: contain;
+         margin-top: 6%;
+         margin-left: -35%;
+    }
+
+    .menu-toogle {
+        border: 2px solid #000;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0% 2% 0% 0%;
+        z-index: 2;
+    }
+
+    .menu-toogle::before {
+        position: absolute;
+        content: "";
+        width: 28px;
+        height: 2px;
+        background-color: #000;
+        transform: translateY(-10px);
+        box-shadow: 0 10px #000;
+        transition: 0.2s;
+    }
+
+    .menu-toogle.active::before {
+        transform: translate(0) rotate(45deg);
+        box-shadow: 0 0 #000;
+    }
+
+    .menu-toogle::after {
+        position: absolute;
+        content: "";
+        width: 28px;
+        height: 2px;
+        background-color: #000;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .menu-toogle.active::after {
+        transform: translate(0) rotate(-45deg);
+    }
+
+    .menu-hamburger.responsive {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 0;
+        top: 0;
+        padding-top: 2px;
+        background-color: #000;
+    }
+
+    .menu-hamburger.responsive li {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn_panier_hamburger {
+        display: block;
+        background: var(--primary-color);
+        color: white;
+        width: 200px;
+        height: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        border: none;
+        position: relative;
+        margin: 2% 10% 0% -10%;
+    }
+
+    #accueil_main .def {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #accueil_main {
+        margin-bottom: 30%;
+    }
+
+    #menu_main .scrollage {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .search-container{
+        display: block;
+    }
+    #personnel .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #personnel h3 {
+        margin: auto;
+    }
+    #blog .viewCommentaire{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}

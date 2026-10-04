@@ -1,0 +1,66 @@
+.message-info {
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width:80%;
+    margin-left: 5%;
+}
+.closebtn {
+    font-weight: bold;
+    float: right;
+    margin-left: 5%;
+    font-size: 25px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.status-en_attente{
+     color: #fff;
+    background-color: yellow;
+     padding: 10px;
+    border-radius: 4px;
+}
+.status-confirmee{
+     color: #fff;
+    background-color: green;
+     padding: 10px;
+    border-radius: 4px;
+}
+.status-annulee{
+     color: #fff;
+    background-color: red;
+     padding: 10px;
+    border-radius: 4px;
+}
+ /* Tables */
+    table {
+        width: 98%;
+        border-collapse: collapse;
+        margin:auto;
+        margin-top: 15px;
+    }
+
+    table th,
+    table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    table th {
+        background-color: #e9ecef;
+        font-weight: bold;
+        color: var(--secondary-color);
+    }
+    /* Enlever la forme sur les champs dans tout le projet */
+    input,select{
+        outline: none;
+    }
+    .iconMomo{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
